@@ -1,0 +1,134 @@
+/* Define a fonte e o estilo básico do corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #de8f74;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+/* Container principal com centralização e padding */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as seções */
+}
+
+/* Estilo para a seção de produtos e carrinho */
+.products, .cart {
+    flex: 1; /* Permite que as seções ocupem o mesmo espaço */
+    padding: 20px;
+    background: #f3cabd;
+    margin: 0;;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos itens de produto */
+.product {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.product:hover {
+    background-color: #f8f9fa;
+}
+
+.product-image {
+    width: 100px; /* Tamanho reduzido da imagem */
+    height: 100px;
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 1px solid #ddd; /* Borda sutil ao redor da imagem */
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #ba1f1f; /* Cor do título do produto */
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product button {
+    padding: 8px 16px;
+    background: #e94747;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para os botões gerais */
+button {
+    padding: 12px 24px;
+    background: #fb4848;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Melhoria na aparência dos itens do carrinho */
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para o total do carrinho */
+#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Adiciona um pouco de espaço ao redor das seções de produtos e carrinho */
+.products, .cart {
+    margin-top: 20px;
+}
+
+.cart{
+    max-height: 250px;
+    color: #ba1f1f;
+}
